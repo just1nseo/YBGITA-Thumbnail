@@ -1,4 +1,4 @@
-torch
+pytorch
 streamlit
 matplotlib.pyplot
 PIL
