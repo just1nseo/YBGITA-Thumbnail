@@ -1,0 +1,8 @@
+torch
+streamlit
+matplotlib.pyplot
+PIL
+torchvision
+transformers import AutoTokenizer, AutoModel, AutoConfig
+torch.nn
+torch.nn.functional
