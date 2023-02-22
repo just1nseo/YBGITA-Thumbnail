@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1wwQjSFRPR2UzHkxyzIJXjS7T8TnEVDnL
 """
 
-pip install streamlit
-
-pip install transformers
 
 
 
@@ -184,5 +181,3 @@ def main():
 # Run the app
 if __name__ == '__main__':
     main()
-
-streamlit run /usr/local/lib/python3.8/dist-packages/ipykernel_launcher.py
