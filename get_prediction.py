@@ -184,4 +184,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-streamlit run /usr/local/lib/python3.8/dist-packages/ipykernel_launcher.py
