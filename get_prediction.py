@@ -14,10 +14,10 @@ import torch
 import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image
-from torchvision import transforms, models
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 import torch.nn as nn
 import torch.nn.functional as F
+from torchvision import transforms, models
 
 
 # Calling the Tokenizer
