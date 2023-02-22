@@ -121,7 +121,7 @@ class ConcatModel(nn.Module):
         return softmax_output
 
 # Save only the state_dict
-torch.save(model.state_dict(), '/content/drive/MyDrive/Thumbnail.pt')
+torch.save(model.state_dict(), '/Users/justin/desktop/Thumbnail.pt')
 
 # Load only the state_dict
 model = ConcatModel(checkpoint)
