@@ -119,14 +119,14 @@ class ConcatModel(nn.Module):
         softmax_output = self.softmax_layer(dense_output2)
         
         return softmax_output
-
-# Save only the state_dict
-torch.save(model.state_dict(), '/Users/justin/desktop/Thumbnail.pt')
-
+    
 # Load only the state_dict
 model = ConcatModel(checkpoint)
 model.load_state_dict(torch.load('/Users/justin/desktop/Thumbnail.pt', map_location=torch.device('cpu')))
 model.eval()  # Set the model to evaluation mode
+
+# Save only the state_dict
+torch.save(model.state_dict(), '/Users/justin/desktop/Thumbnail.pt')
 
 
 # Define the prediction function
