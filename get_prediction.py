@@ -125,7 +125,7 @@ torch.save(model.state_dict(), '/content/drive/MyDrive/Thumbnail.pt')
 
 # Load only the state_dict
 model = ConcatModel(checkpoint)
-model.load_state_dict(torch.load('/content/drive/MyDrive/Thumbnail.pt', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('/Users/justin/desktop/Thumbnail.pt', map_location=torch.device('cpu')))
 model.eval()  # Set the model to evaluation mode
 
 
