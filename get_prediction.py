@@ -17,6 +17,12 @@ from transformers import AutoTokenizer, AutoModel, AutoConfig
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import transforms, models
+import wget
+
+url = 'https://drive.google.com/file/d/1La2KfCQJws5UHigKyO4MZHjSA_Cv7KsU/view?usp=share_link'
+file_name = 'Thumbnail.pt'
+
+wget.download(url, file_name)
 
 
 # Calling the Tokenizer
@@ -119,14 +125,14 @@ class ConcatModel(nn.Module):
         
         return softmax_output
     
-file_path = "/Users/justin/desktop/thumbnail/Thumbnail.pt"
+
 # Load only the state_dict
 model = ConcatModel(checkpoint)
-model.load_state_dict(torch.load(file_path, map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('Thumbnail.pt', map_location=torch.device('cpu')))
 model.eval()  # Set the model to evaluation mode
 
 # Save only the state_dict
-torch.save(model.state_dict(), file_path)
+torch.save(model.state_dict(), 'Thumbnail.pt')
 
 
 # Define the prediction function
